@@ -1,0 +1,5 @@
+RewriteEngine On 
+RewriteRule ^$ /sapphire-training-spark/ [L] 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^((?!sapphire-training-spark/).*)$ /index.html [L]
